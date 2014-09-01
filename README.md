@@ -72,7 +72,7 @@ Please send us your feedback, including error reports, improvement suggestions, 
 How to use pride-utilities
 ===============
 
-# Using PRIDE-Uitlities 
+# Using PRIDE-Utilities 
 
 Here we will show you how to use the PRIDE Utilitites library to calculate m/z delta and calculate theoretical mass of a given peptide.
 
