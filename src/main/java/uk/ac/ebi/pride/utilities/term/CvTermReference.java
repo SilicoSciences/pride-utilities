@@ -8,7 +8,7 @@ import java.util.Collection;
  * CvTerms contain a list of controlled vocabularies.
  * <p/>
  * @author rwang
- * @author yperez
+ * @author ypriverol
  */
 public enum CvTermReference {
 

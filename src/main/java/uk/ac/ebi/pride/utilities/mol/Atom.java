@@ -4,7 +4,7 @@ package uk.ac.ebi.pride.utilities.mol;
 /**
  * Atom is an enum which stores all chemical elements.
  * <p/>
- * User: rwang
+ * @author rwang
  * Date: 10-Aug-2010
  * Time: 09:54:54
  */

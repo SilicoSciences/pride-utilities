@@ -4,7 +4,8 @@ package uk.ac.ebi.pride.utilities.mol;
 /**
  * Enumeration of 20 amino acids.
  * <p/>
- * User: rwang, yperez
+ * @author rwang
+ * @author ypriverol
  * Date: 14-Jun-2010
  * Time: 14:35:29
  */

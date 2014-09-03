@@ -1,4 +1,4 @@
-package uk.ac.ebi.pride.utilities.data;
+package uk.ac.ebi.pride.utilities.util;
 
 
 import java.io.Serializable;
@@ -6,7 +6,8 @@ import java.io.Serializable;
 /**
  * Tuple stores two elements.
  *
- * User: rwang
+ * @author rwang
+ * @quthor ypriverol
  * Date: 08-Sep-2010
  * Time: 11:17:04
  */

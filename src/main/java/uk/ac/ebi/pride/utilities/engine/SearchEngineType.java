@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * SearchEngineType defines a list of supported search engines.
  * <p/>
- * User: yperez, rwang
+ * @author ypriverol, rwang
  * Date: 01-Dec-2010
  * Time: 16:41:12
  */

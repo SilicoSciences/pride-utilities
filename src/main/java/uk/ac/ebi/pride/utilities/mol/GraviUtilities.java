@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  *
- * @author yperez
+ * @author ypriverol
  */
 public class GraviUtilities {
     private static final Map<String, Double> graviIndexes = new HashMap<String, Double>(){

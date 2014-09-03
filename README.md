@@ -5,6 +5,10 @@ pride-utilities
 
 The primary purpose of PRIDE Utilities library is to provide commonly used classes shared by all the PRIDE Tool Suite. You may also find it useful for your own computational proteomics projects.
 
+# License
+
+pride-utilities is a PRIDE API licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
+
 # How to cite it:
 
 Wang, R., Fabregat, A., Ríos, D., Ovelleiro, D., Foster, J. M., Côté, R. G., ... & Vizcaíno, J. A. (2012). PRIDE Inspector: a tool to visualize and validate MS proteomics data. Nature biotechnology, 30(2), 135-137. [PDF File](http://www.nature.com/nbt/journal/v30/n2/pdf/nbt.2112.pdf), [Pubmed Record](http://www.ncbi.nlm.nih.gov/pubmed/22318026)
@@ -74,11 +78,11 @@ How to use pride-utilities
 
 # Using PRIDE-Utilities 
 
-Here we will show you how to use the PRIDE Utilitites library to calculate m/z delta and calculate theoretical mass of a given peptide.
+Here we will show you how to use the PRIDE Utilities library to calculate m/z delta and calculate theoretical mass of a given peptide.
 
 ### Calculate m/z Delta:
 
-You can find the method for calculating m/z delta from MoleculeUtilitites in uk.ac.ebi.pride.mol package. It requires four input parameters:
+You can find the method for calculating m/z delta from MoleculeUtilities in uk.ac.ebi.pride.mol package. It requires four input parameters:
 
 ```java 
 /*
@@ -94,7 +98,7 @@ Double mzDelta = MolecularUtilitites.calculateDeltaMz(sequence, precursorMz, pre
 
 ### Calculate Theoretical Mass
 
-You can also find the method for calculating theoretical mass value from MoleculeUtilitites. It needs two input parameters:
+You can also find the method for calculating theoretical mass value from MoleculeUtilities. It needs two input parameters:
 
 ```java
  /*

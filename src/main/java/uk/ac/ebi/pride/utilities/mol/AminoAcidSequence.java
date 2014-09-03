@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Peptide represents a list of <cod> AminoAcid </code>
  *
- * User: rwang
+ * @author rwang
  * Date: 21-Oct-2010
  * Time: 13:56:07
  */

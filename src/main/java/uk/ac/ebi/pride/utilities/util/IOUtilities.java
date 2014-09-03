@@ -13,7 +13,7 @@ import java.security.CodeSource;
  * <code> IOUtilities </code> provides a list of convenient methods
  * to perform io operations.
  * <p/>
- * User: rwang
+ * @author rwang
  * Date: 11-Oct-2010
  * Time: 11:06:10
  */

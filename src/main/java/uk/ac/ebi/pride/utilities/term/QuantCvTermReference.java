@@ -5,7 +5,8 @@ package uk.ac.ebi.pride.utilities.term;
  * Holds the cvParams to report quantitative information
  * in PRIDE XML files.
  *
- * @author yperez, jg, rwang
+ * @author ypriverol
+ * @author rwang
  */
 public enum QuantCvTermReference {
     /**

@@ -9,7 +9,7 @@ import java.util.List;
  * the mono mass deltas and avg mass deltas list can not modified.
  *
  * @author rwang
- * @author yperez
+ * @author ypriverol
  */
 public class PTModification {
 

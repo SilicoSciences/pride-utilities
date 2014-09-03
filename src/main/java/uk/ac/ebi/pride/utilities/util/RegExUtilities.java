@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 /**
  * <code> RegExUtilities </code> provides convenient methods for handling regular expressions.
  *
- * User: rwang
+ * @author rwang
  * Date: 10-Oct-2010
  * Time: 09:57:28
  */

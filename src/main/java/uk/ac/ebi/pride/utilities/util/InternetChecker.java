@@ -9,7 +9,7 @@ import java.net.URL;
 /**
  * InternetChecker checks the availability of internet on local computer
  *
- * User: rwang
+ * @author rwang
  * Date: 04-Oct-2010
  * Time: 14:59:53
  */

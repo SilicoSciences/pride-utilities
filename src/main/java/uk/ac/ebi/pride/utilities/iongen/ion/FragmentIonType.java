@@ -5,7 +5,7 @@ package uk.ac.ebi.pride.utilities.iongen.ion;
  * Refer to FragmentIonTypeColor for specific color.
  *
  * @author: rwang
- * @author: yperez
+ * @author: ypriverol
  */
 public class FragmentIonType implements Cloneable {
     public static final FragmentIonType A_ION = new FragmentIonType("a ion", "a");

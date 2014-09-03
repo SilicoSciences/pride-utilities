@@ -3,7 +3,7 @@ package uk.ac.ebi.pride.utilities.iongen.model;
 import java.util.*;
 
 /**
- * User: qingwei
+ * @author qingwei
  * Date: 10/12/12
  */
 public class ProductIonSet extends TreeSet<ProductIon> {

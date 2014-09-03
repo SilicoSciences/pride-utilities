@@ -3,7 +3,7 @@ package uk.ac.ebi.pride.utilities.mol;
 /**
  * NuclearParticle is an enum which stores all the nuclear particles.
  *
- * User: rwang
+ * @author rwang
  * Date: 10-Aug-2010
  * Time: 09:48:18
  */

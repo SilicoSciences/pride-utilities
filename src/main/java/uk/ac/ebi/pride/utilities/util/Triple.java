@@ -1,11 +1,11 @@
-package uk.ac.ebi.pride.utilities.data;
+package uk.ac.ebi.pride.utilities.util;
 
 import java.io.Serializable;
 
 /**
  * Data structure contains three elements
  *
- * User: rwang
+ * @author rwang
  * Date: 24/06/11
  * Time: 14:20
  */

@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * User: qingwei
+ * @author qingwei
  * Date: 10/12/12
  */
 public class PeptideScore {

@@ -7,7 +7,7 @@ import java.math.MathContext;
  * In double add, minus, compare operator, can not get exact 0. "fraction" used to approximate compute.
  * In the range of faction, we all believe that they are equal.
  *
- * User: qingwei
+ * @author qingwei
  * Date: 11/12/12
  */
 public class ApproximateComparator {

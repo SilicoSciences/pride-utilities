@@ -5,7 +5,8 @@ import java.math.BigDecimal;
 /**
  * <code> NumberUtilities </code> provides methods for number handling.
  * <p/>
- * User: rwang, yperez
+ * @author rwang
+ * @author ypriverol
  * Date: 10-Oct-2010
  * Time: 10:03:46
  */

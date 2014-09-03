@@ -7,7 +7,7 @@ import java.awt.*;
  *
  * This class is decoupled from FragmentIonType.
  *
- * User: rwang
+ * @author rwang
  * Date: 09-Aug-2010
  * Time: 09:05:29
  */

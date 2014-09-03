@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertTrue;
 
 /**
  * @author rwang
- * @author yperez
+ * @author ypriverol
  */
 
 public class NumberUtilitiesTest {

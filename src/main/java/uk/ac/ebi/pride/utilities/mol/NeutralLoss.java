@@ -3,7 +3,7 @@ package uk.ac.ebi.pride.utilities.mol;
 /**
  * neutral losses
  * 
- * User: rwang
+ * @author rwang
  * Date: 14-Jun-2010
  * Time: 17:55:53
  */
