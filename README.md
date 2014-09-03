@@ -5,6 +5,10 @@ pride-utilities
 
 The primary purpose of PRIDE Utilities library is to provide commonly used classes shared by all the PRIDE Tool Suite. You may also find it useful for your own computational proteomics projects.
 
+# License
+
+pride-utilities is a PRIDE API licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
+
 # How to cite it:
 
 Wang, R., Fabregat, A., Ríos, D., Ovelleiro, D., Foster, J. M., Côté, R. G., ... & Vizcaíno, J. A. (2012). PRIDE Inspector: a tool to visualize and validate MS proteomics data. Nature biotechnology, 30(2), 135-137. [PDF File](http://www.nature.com/nbt/journal/v30/n2/pdf/nbt.2112.pdf), [Pubmed Record](http://www.ncbi.nlm.nih.gov/pubmed/22318026)
