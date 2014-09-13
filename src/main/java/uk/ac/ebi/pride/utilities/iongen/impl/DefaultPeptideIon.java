@@ -14,6 +14,7 @@ import java.util.Map;
  * @version 0.1-SNAPSHOT
  */
 public class DefaultPeptideIon implements PeptideIon {
+
     private Peptide peptide;
     private int charge;
     private double mass;
@@ -38,7 +39,6 @@ public class DefaultPeptideIon implements PeptideIon {
         while (it.hasNext()) {
             position = it.next();
             modification = ptm.get(position);
-
             mass += modification.getMonoMassDeltas().get(0);
         }
 
