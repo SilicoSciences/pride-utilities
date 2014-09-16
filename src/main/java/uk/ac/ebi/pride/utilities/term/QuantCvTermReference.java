@@ -1,6 +1,12 @@
 package uk.ac.ebi.pride.utilities.term;
 
 
+import com.sun.org.apache.bcel.internal.util.ClassQueue;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+
 /**
  * Holds the cvParams to report quantitative information
  * in PRIDE XML files.
@@ -133,8 +139,73 @@ public enum QuantCvTermReference {
         return name;
     }
 
-    public String getParentAccession() {
-        return parentAccession;
+    public Collection<String> getChildAccessions() {
+        Collection<String> results = new ArrayList<String>();
+        QuantCvTermReference[] cvTerms = QuantCvTermReference.values();
+        for (QuantCvTermReference cv : cvTerms) {
+            if (cv.getParentAccessions().contains(accession)) {
+                results.add(cv.getAccession());
+            }
+        }
+        return results;
+    }
+
+    public Collection<String> getParentAccessions() {
+        return Arrays.asList(parentAccession.split(";"));
+    }
+
+    /**
+     * Get Cv term by accession.
+     *
+     * @param accession controlled vocabulary accession.
+     * @return CvTermReference  Cv term.
+     */
+    public static QuantCvTermReference getCvRefByAccession(String accession) {
+        QuantCvTermReference cvTerm = null;
+
+        QuantCvTermReference[] cvTerms = QuantCvTermReference.values();
+        for (QuantCvTermReference cv : cvTerms) {
+            if (cv.getAccession().equals(accession)) {
+                cvTerm = cv;
+            }
+        }
+
+        return cvTerm;
+    }
+
+    /**
+     * Check whether the accession exists in the enum.
+     *
+     * @param accession controlled vocabulary accession
+     * @return boolean  true if exists
+     */
+    public static boolean hasAccession(String accession) {
+        boolean result = false;
+
+        QuantCvTermReference[] cvTerms = QuantCvTermReference.values();
+        for (QuantCvTermReference cv : cvTerms) {
+            if (cv.getAccession().equals(accession)) {
+                result = true;
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * Check whether two accessions are parent-child relationship.
+     *
+     * @param parentAcc parent accession.
+     * @param childAcc  child accession.
+     * @return boolean  true if it is parent-child relationship.
+     */
+    public static boolean isChild(String parentAcc, String childAcc) {
+        boolean isChild = false;
+        QuantCvTermReference childCvTerm = getCvRefByAccession(childAcc);
+        if (childCvTerm != null && childCvTerm.getParentAccessions().contains(parentAcc)) {
+            isChild = true;
+        }
+        return isChild;
     }
 
     public static boolean isQuantitativeMethodParam(String accession) {
@@ -396,6 +467,112 @@ public enum QuantCvTermReference {
         } else if (ICPL_6_REAGENT.getAccession().equals(accession)) {
             return ICPL_6_REAGENT;
         } else if (ICPL_10_REAGENT.getAccession().equals(accession)) {
+            return ICPL_10_REAGENT;
+        }
+
+        return null;
+    }
+
+    public static QuantCvTermReference getReagentByShortAccessionLabel(String shortLabel){
+
+        if (ITRAQ_113_REAGENT.getAccession().contains(shortLabel)) {
+            return ITRAQ_113_REAGENT;
+        } else if (ITRAQ_114_REAGENT.getAccession().equals(shortLabel)) {
+            return ITRAQ_114_REAGENT;
+        } else if (ITRAQ_115_REAGENT.getAccession().equals(shortLabel)) {
+            return ITRAQ_115_REAGENT;
+        } else if (ITRAQ_116_REAGENT.getAccession().equals(shortLabel)) {
+            return ITRAQ_116_REAGENT;
+        } else if (ITRAQ_117_REAGENT.getAccession().equals(shortLabel)) {
+            return ITRAQ_117_REAGENT;
+        } else if (ITRAQ_118_REAGENT.getAccession().equals(shortLabel)) {
+            return ITRAQ_118_REAGENT;
+        } else if (ITRAQ_119_REAGENT.getAccession().equals(shortLabel)) {
+            return ITRAQ_119_REAGENT;
+        } else if (ITRAQ_121_REAGENT.getAccession().equals(shortLabel)) {
+            return ITRAQ_121_REAGENT;
+        } else if (TMT_126_REAGENT.getAccession().equals(shortLabel)) {
+            return TMT_126_REAGENT;
+        } else if (TMT_127_REAGENT.getAccession().equals(shortLabel)) {
+            return TMT_127_REAGENT;
+        } else if (TMT_128_REAGENT.getAccession().equals(shortLabel)) {
+            return TMT_128_REAGENT;
+        } else if (TMT_129_REAGENT.getAccession().equals(shortLabel)) {
+            return TMT_129_REAGENT;
+        } else if (TMT_130_REAGENT.getAccession().equals(shortLabel)) {
+            return TMT_130_REAGENT;
+        } else if (TMT_131_REAGENT.getAccession().equals(shortLabel)) {
+            return TMT_131_REAGENT;
+        } else if (SILAC_HEAVY_REAGENT.getAccession().equals(shortLabel)) {
+            return SILAC_HEAVY_REAGENT;
+        } else if (SILAC_MEDIUM_REAGENT.getAccession().equals(shortLabel)) {
+            return SILAC_MEDIUM_REAGENT;
+        } else if (SILAC_LIGHT_REAGENT.getAccession().equals(shortLabel)) {
+            return SILAC_LIGHT_REAGENT;
+        } else if (ICAT_HEAVY_REAGENT.getAccession().equals(shortLabel)) {
+            return ICAT_HEAVY_REAGENT;
+        } else if (ICAT_LIGHT_REAGENT.getAccession().equals(shortLabel)) {
+            return ICAT_LIGHT_REAGENT;
+        } else if (ICPL_0_REAGENT.getAccession().equals(shortLabel)) {
+            return ICPL_0_REAGENT;
+        } else if (ICPL_4_REAGENT.getAccession().equals(shortLabel)) {
+            return ICPL_4_REAGENT;
+        } else if (ICPL_6_REAGENT.getAccession().equals(shortLabel)) {
+            return ICPL_6_REAGENT;
+        } else if (ICPL_10_REAGENT.getAccession().equals(shortLabel)) {
+            return ICPL_10_REAGENT;
+        }
+
+        return null;
+    }
+
+    public static QuantCvTermReference getReagentByShortNameLabel(String shortLabel){
+
+        if (ITRAQ_113_REAGENT.getName().contains(shortLabel)) {
+            return ITRAQ_113_REAGENT;
+        } else if (ITRAQ_114_REAGENT.getName().equals(shortLabel)) {
+            return ITRAQ_114_REAGENT;
+        } else if (ITRAQ_115_REAGENT.getName().equals(shortLabel)) {
+            return ITRAQ_115_REAGENT;
+        } else if (ITRAQ_116_REAGENT.getName().equals(shortLabel)) {
+            return ITRAQ_116_REAGENT;
+        } else if (ITRAQ_117_REAGENT.getName().equals(shortLabel)) {
+            return ITRAQ_117_REAGENT;
+        } else if (ITRAQ_118_REAGENT.getName().equals(shortLabel)) {
+            return ITRAQ_118_REAGENT;
+        } else if (ITRAQ_119_REAGENT.getName().equals(shortLabel)) {
+            return ITRAQ_119_REAGENT;
+        } else if (ITRAQ_121_REAGENT.getName().equals(shortLabel)) {
+            return ITRAQ_121_REAGENT;
+        } else if (TMT_126_REAGENT.getName().equals(shortLabel)) {
+            return TMT_126_REAGENT;
+        } else if (TMT_127_REAGENT.getName().equals(shortLabel)) {
+            return TMT_127_REAGENT;
+        } else if (TMT_128_REAGENT.getName().equals(shortLabel)) {
+            return TMT_128_REAGENT;
+        } else if (TMT_129_REAGENT.getName().equals(shortLabel)) {
+            return TMT_129_REAGENT;
+        } else if (TMT_130_REAGENT.getName().equals(shortLabel)) {
+            return TMT_130_REAGENT;
+        } else if (TMT_131_REAGENT.getName().equals(shortLabel)) {
+            return TMT_131_REAGENT;
+        } else if (SILAC_HEAVY_REAGENT.getName().equals(shortLabel)) {
+            return SILAC_HEAVY_REAGENT;
+        } else if (SILAC_MEDIUM_REAGENT.getName().equals(shortLabel)) {
+            return SILAC_MEDIUM_REAGENT;
+        } else if (SILAC_LIGHT_REAGENT.getName().equals(shortLabel)) {
+            return SILAC_LIGHT_REAGENT;
+        } else if (ICAT_HEAVY_REAGENT.getName().equals(shortLabel)) {
+            return ICAT_HEAVY_REAGENT;
+        } else if (ICAT_LIGHT_REAGENT.getName().equals(shortLabel)) {
+            return ICAT_LIGHT_REAGENT;
+        } else if (ICPL_0_REAGENT.getName().equals(shortLabel)) {
+            return ICPL_0_REAGENT;
+        } else if (ICPL_4_REAGENT.getName().equals(shortLabel)) {
+            return ICPL_4_REAGENT;
+        } else if (ICPL_6_REAGENT.getName().equals(shortLabel)) {
+            return ICPL_6_REAGENT;
+        } else if (ICPL_10_REAGENT.getName().equals(shortLabel)) {
             return ICPL_10_REAGENT;
         }
 

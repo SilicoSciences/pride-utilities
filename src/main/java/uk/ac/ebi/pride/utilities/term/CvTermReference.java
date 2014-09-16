@@ -10,7 +10,7 @@ import java.util.Collection;
  * @author rwang
  * @author ypriverol
  */
-public enum CvTermReference {
+public enum CvTermReference{
 
     MS_ANALYSIS_SOFTWARE("MS", "MS:1001456", "Analysis software", "MS:1000531"),
     MS_SOFTWARE("MS","MS:1000531", "Software", "MS:0000000"),
