@@ -1,7 +1,6 @@
 package uk.ac.ebi.pride.utilities.term;
 
 
-import com.sun.org.apache.bcel.internal.util.ClassQueue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -106,11 +105,14 @@ public enum QuantCvTermReference {
     TMT_130_REAGENT("PRIDE", "PRIDE:0000289", "TMT reagent 130", ""),
     TMT_131_REAGENT("PRIDE", "PRIDE:0000290", "TMT reagent 131", ""),
 
+    //Todo: We should included this term in PRIDE
+    EXPERIMENT_STUDY_VARIABLE_BASED("PRIDE", "PRIDE:0000650", "Quantitation experiment based on variales", ""),
     /**
      * QUANTIFICATION UNITS
      */
     UNIT_RATIO("PRIDE", "PRIDE:0000395", "Ratio", ""),
     UNIT_COPIES_PER_CELL("PRIDE", "PRIDE:0000396", "Copies per cell", "");
+
 
     private final String cvLabel;
     private final String accession;
@@ -376,7 +378,6 @@ public enum QuantCvTermReference {
     }
 
     public static boolean isUnit(String accession) {
-
         return UNIT_RATIO.getAccession().equals(accession) || UNIT_COPIES_PER_CELL.getAccession().equals(accession);
     }
 
@@ -420,8 +421,6 @@ public enum QuantCvTermReference {
     }
 
     public static QuantCvTermReference getReagent(String accession) {
-
-
         if (ITRAQ_113_REAGENT.getAccession().equals(accession)) {
             return ITRAQ_113_REAGENT;
         } else if (ITRAQ_114_REAGENT.getAccession().equals(accession)) {

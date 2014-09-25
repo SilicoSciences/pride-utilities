@@ -49,6 +49,8 @@ public enum CvTermReference{
 
     MS_DECOY_PEPTIDE("MS", "MS:1002217", "decoy peptide", null),
 
+    MS_MULTIPLE_SAMPLE("PRIDE", "PRIDE:0000366", "Contains multiple subsamples", null),
+
     MS_PSI_MZDATA_FILE("MS", "MS:1000564", "PSI mzData file", null),
     MS_SPEC_NATIVE_ID_FORMAT("MS", "MS:1000777", "spectrum identifier nativeID format", null),
 
@@ -167,7 +169,7 @@ public enum CvTermReference{
 
     X_CORRELATION("PRIDE", "PRIDE:0000013", "X correlation", "PRIDE:0000049"),
 
-    MS_SEARCH_ENGINE_SPECIFIC_SCORE("MS", "MS:1001153", "search engine specific score", null),
+    MS_SEARCH_ENGINE_SPECIFIC_SCORE("MS", "MS:1001153", "Search engine specific score", null),
 
     OMSSA_E_VALUE("PRIDE", "PRIDE:0000185", "OMSSA E-value", "PRIDE:0000049"),
     OMSSA_P_VALUE("PRIDE", "PRIDE:0000186", "OMSSA P-value", "PRIDE:0000049"),
