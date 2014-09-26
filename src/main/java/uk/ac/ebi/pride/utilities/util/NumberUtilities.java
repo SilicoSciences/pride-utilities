@@ -19,7 +19,7 @@ public class NumberUtilities {
      * @return boolean  true if it is a number
      */
     public static boolean isNumber(String string) {
-        if(string.length() ==1 && !Character.isDigit(string.charAt(0))){
+        if(string != null && string.length() ==1 && !Character.isDigit(string.charAt(0))){
             return false;
         }
         if (string == null || string.isEmpty()) {
