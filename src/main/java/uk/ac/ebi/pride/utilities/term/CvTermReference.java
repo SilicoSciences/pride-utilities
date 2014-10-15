@@ -50,6 +50,7 @@ public enum CvTermReference{
     MS_DECOY_PEPTIDE("MS", "MS:1002217", "decoy peptide", null),
 
     MS_MULTIPLE_SAMPLE("PRIDE", "PRIDE:0000366", "Contains multiple subsamples", null),
+    PRIDE_SAMPLE_DESCRIPTION("PRIDE", "PRIDE:0000017", "Sample description additional parameter", null),
 
     MS_PSI_MZDATA_FILE("MS", "MS:1000564", "PSI mzData file", null),
     MS_SPEC_NATIVE_ID_FORMAT("MS", "MS:1000777", "spectrum identifier nativeID format", null),

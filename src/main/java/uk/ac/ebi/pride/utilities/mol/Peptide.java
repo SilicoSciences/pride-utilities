@@ -5,10 +5,11 @@ import java.util.*;
 /**
  * A peptide including three parts: N terminal group, C terminal group and a couple of AminoAcids.
  *
- * @author Qingwei XU
+ * @author ypriverol
  * @version 0.1-SNAPSHOT
  */
 public class Peptide {
+
     private List<AminoAcid> acidList;
     private Group n_terminal;
     private Group c_terminal;
@@ -90,6 +91,8 @@ public class Peptide {
 
         addALLModification(ptm);
     }
+
+
 
 
     /**
@@ -255,4 +258,27 @@ public class Peptide {
         return sb.toString();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Peptide peptide = (Peptide) o;
+
+        if (acidList != null ? !acidList.equals(peptide.acidList) : peptide.acidList != null) return false;
+        if (c_terminal != null ? !c_terminal.equals(peptide.c_terminal) : peptide.c_terminal != null) return false;
+        if (n_terminal != null ? !n_terminal.equals(peptide.n_terminal) : peptide.n_terminal != null) return false;
+        if (ptm != null ? !ptm.equals(peptide.ptm) : peptide.ptm != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = acidList != null ? acidList.hashCode() : 0;
+        result = 31 * result + (n_terminal != null ? n_terminal.hashCode() : 0);
+        result = 31 * result + (c_terminal != null ? c_terminal.hashCode() : 0);
+        result = 31 * result + (ptm != null ? ptm.hashCode() : 0);
+        return result;
+    }
 }

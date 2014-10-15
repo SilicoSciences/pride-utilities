@@ -74,6 +74,8 @@ public enum QuantCvTermReference {
     SUBSAMPLE7_DESCRIPTION("PRIDE", "PRIDE:0000373", "Subample 7 description", ""),
     SUBSAMPLE8_DESCRIPTION("PRIDE", "PRIDE:0000374", "Subample 8 description", ""),
 
+
+
     /**
      * QUANTIFICATION REAGENTS
      */
