@@ -9,6 +9,7 @@ import uk.ac.ebi.pride.utilities.mol.Peptide;
  * @version 0.1-SNAPSHOT
  */
 public class DefaultPrecursorIon extends AbstractPrecursorIon {
+
     public DefaultPrecursorIon(Peptide peptide, int charge) {
         super(peptide, charge);
     }

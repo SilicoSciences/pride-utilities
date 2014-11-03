@@ -55,4 +55,5 @@ public class InternetChecker {
 
         return true;
     }
+
 }

@@ -266,7 +266,15 @@ public enum CvTermReference{
     MS_INSTRUMENT_MODEL("MS", "MS:1000031", "instrument model", "MS:1000463"),
     MS_INSTRUMENT_DETECTOR("MS", "MS:1000453", "detector", "MS:1000463"),
     MS_INSTRUMENT_ANALYZER("MS", "MS:1000451", "mass analyzer", "MS:1000463"),
-    MS_INSTRUMENT_SOURCE("MS", "MS:1000458", "source", "MS:1000463");
+    MS_INSTRUMENT_SOURCE("MS", "MS:1000458", "source", "MS:1000463"),
+    /**
+     * This section are some CVterms that are needed for Wiff files that use Title instead of index to reference the spectra.
+     */
+    MS_MGF_TITLE_INDEX("MS", "MS:1000796", "spectrum title","MS:1000499"),
+    MS_FILE_FORMAT_WIFF("MS", "MS:1000562", "ABI WIFF format", "MS:1000560"),
+    MS_ID_FORMAT_WIFF("MS","MS:1000770","WIFF nativeID format","MS:1000767"),
+    MS_MGF_FILE_FORMAT("MS", "MS:1001062", "Mascot MGF format", "MS:1000560"),
+    MS_MGF_IDFORMAT_TITLE("MS", "MS:1000796", "spectrum title", "MS:1000499");
 
 
     private final String cvLabel;
