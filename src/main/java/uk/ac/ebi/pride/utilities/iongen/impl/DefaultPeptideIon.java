@@ -39,7 +39,8 @@ public class DefaultPeptideIon implements PeptideIon {
         while (it.hasNext()) {
             position = it.next();
             modification = ptm.get(position);
-            mass += modification.getMonoMassDeltas().get(0);
+            if(modification.getMonoMassDeltas() != null && !modification.getMonoMassDeltas().isEmpty())
+               mass += modification.getMonoMassDeltas().get(0);
         }
 
         return mass;

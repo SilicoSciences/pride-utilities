@@ -10,8 +10,8 @@ import uk.ac.ebi.pride.utilities.mol.ProductIonType;
  * Implement most of methods of {@link ProductIon} interface. This class implements Comparable interface, which
  * can be storage into sorted collections based on cleavage position ascending order. This class Extends
  * {@link DefaultPeptideIon} which inherit peptide ion methods: such as
- * {@link uk.ac.ebi.pride.iongen.model.impl.DefaultPeptideIon#getMass()},
- * {@link uk.ac.ebi.pride.iongen.model.impl.DefaultPeptideIon#getMassOverCharge()}, and so on.
+ * {@link uk.ac.ebi.pride.utilities.iongen.impl.DefaultPeptideIon#getMass()},
+ * {@link uk.ac.ebi.pride.utilities.iongen.impl.DefaultPeptideIon#getMassOverCharge()}, and so on.
  *
  * @author Qingwei XU
  * @version 0.1-SNAPSHOT
@@ -30,7 +30,7 @@ public abstract class AbstractProductIon extends DefaultPeptideIon implements Pr
      * <P>
      *     Notice: Not suggest user to create a instance by calling construct method directly.
      * </P>
-     * Reference {@link AbstractPrecursorIon#getProductIon(uk.ac.ebi.pride.mol.ProductIonType, int, int)}
+     * Reference {@link AbstractPrecursorIon#getProductIon(uk.ac.ebi.pride.utilities.mol.ProductIonType, int, int)}
      * see how to generate the product ion.
      *
      * @param precursorIon should not set null! Otherwise throw NullPointerException.

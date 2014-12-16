@@ -5,7 +5,7 @@ import uk.ac.ebi.pride.utilities.mol.ProductIonType;
 /**
  * A kind of {@link PeptideIon}, which can cleavage different types of product ions.
  *
- * @see uk.ac.ebi.pride.iongen.model.impl.AbstractPrecursorIon
+ * @see uk.ac.ebi.pride.utilities.iongen.impl.AbstractPrecursorIon
  *
  * @author Qingwei XU
  * @version 0.1-SNAPSHOT
