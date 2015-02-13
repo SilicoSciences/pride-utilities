@@ -4,7 +4,7 @@
 
     <groupId>uk.ac.ebi.pride.utilities</groupId>
     <artifactId>pride-utilities</artifactId>
-    <version>2.0.2</version>
+    <version>2.0.3-SNAPSHOT</version>
 
     <name>PRIDE Utilities Library</name>
     <url>http://code.google.com/p/pride-toolsuite/</url>
@@ -219,7 +219,7 @@
         <connection>scm:git:github.com/PRIDE-Utilities/pride-utilities.git</connection>
         <developerConnection>scm:git:git@github.com:PRIDE-Utilities/pride-utilities.git</developerConnection>
         <url>https://github.com/PRIDE-Utilities/pride-utilities.git</url>
-        <tag>pride-utilities-2.0.2</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
