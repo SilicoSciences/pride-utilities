@@ -12,7 +12,7 @@ import java.util.Collection;
  */
 public enum CvTermReference{
 
-    MS_ANALYSIS_SOFTWARE("MS", "MS:1001456", "Analysis software", "MS:1000531"),
+    MS_ANALYSIS_SOFTWARE("MS", "MS:1001456", "analysis software", "MS:1000531"),
     MS_SOFTWARE("MS","MS:1000531", "Software", "MS:0000000"),
     MS_DATABASE("MS", "MS:1001013", "database name", "MS:1001011"),
     MS_PUBLICATION_DOI("MS", "MS:1001922", "doi", "MS:1000878"),

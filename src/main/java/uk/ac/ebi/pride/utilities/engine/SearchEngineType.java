@@ -12,6 +12,7 @@ import java.util.List;
  * Date: 01-Dec-2010
  * Time: 16:41:12
  */
+@Deprecated
 public enum SearchEngineType {
 
     MASCOT(Arrays.asList(CvTermReference.MASCOT_SCORE,

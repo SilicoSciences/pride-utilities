@@ -8,6 +8,13 @@ package uk.ac.ebi.pride.utilities.mol;
  * Time: 09:48:18
  */
 public enum NuclearParticle implements Mass {
+
+//    Corrected values (C. Amsler et al., "Review of Particle Physics" Physics Letters B667, 1 (2008))
+//    m(1H)         = 1.00727646677 u = mass of proton; charge +1
+//    m(1H+e-)      = 1.00782504 u = mass of proton + mass of electron
+//    m(e-)         = 0.00054858026 u = mass of electron; charge -1
+//    m(e-)         = 0.00054857990924 u = new determination of electrons mass
+
     //todo: check the monomass and avgmass values.
     PROTON ("proton", "H", 1, 1.007276470, 1.007276470);
 

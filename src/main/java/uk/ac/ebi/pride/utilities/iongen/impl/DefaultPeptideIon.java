@@ -25,10 +25,10 @@ public class DefaultPeptideIon implements PeptideIon {
         Group n_terminal = this.peptide.getNTerminalGroup();
         List<AminoAcid> acidList = this.peptide.getAminoAcids();
 
-        mass += c_terminal == null ? 0 : c_terminal.getMass();
         for (AminoAcid acid : acidList) {
             mass += acid.getMonoMass();
         }
+        mass += c_terminal == null ? 0 : c_terminal.getMass();
         mass += n_terminal == null ? 0 : n_terminal.getMass();
 
         //calculate modifications
