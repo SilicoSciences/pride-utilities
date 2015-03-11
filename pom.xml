@@ -4,10 +4,9 @@
 
     <groupId>uk.ac.ebi.pride.utilities</groupId>
     <artifactId>pride-utilities</artifactId>
-    <version>2.0.3-SNAPSHOT</version>
-
+    <version>2.0.4-SNAPSHOT</version>
     <name>PRIDE Utilities Library</name>
-    <url>http://code.google.com/p/pride-toolsuite/</url>
+    <url>https://github.com/PRIDE-Utilities/pride-utilities</url>
     <description>Open-source java library with different utilities for PRIDE-toolsuite</description>
 
 

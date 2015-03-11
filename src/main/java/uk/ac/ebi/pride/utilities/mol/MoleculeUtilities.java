@@ -183,6 +183,33 @@ public class MoleculeUtilities {
     }
 
     /**
+     * Calculate the mono delta m/z for the given sequence, based on theoretical and experimental mass
+     *
+     * @param precursorMz     precursor m/z
+     * @param theoreticalMass a theoretical mass
+     * @return Double monoisotopic delta m/z
+     */
+    public static Double calculateDeltaMz(double precursorMz, double theoreticalMass) {
+        // this is double object because sometime double could be -1;
+        Double deltaMass = null;
+
+        // check the legality of the input arguments first
+        if (precursorMz > 0 && theoreticalMass != 0) {
+            try {
+                // precursor mass
+                // delta mass
+                deltaMass = (precursorMz - theoreticalMass);
+            } catch (IllegalAminoAcidSequenceException ex) {
+                // do nothing
+            }
+        }
+
+        return deltaMass;
+    }
+
+
+
+    /**
      * Calculate peptide's monoisotopic mass.
      *
      * @param aminoAcidSequence         peptide sequence.
