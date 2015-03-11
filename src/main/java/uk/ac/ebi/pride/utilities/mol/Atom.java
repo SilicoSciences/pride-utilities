@@ -10,8 +10,8 @@ package uk.ac.ebi.pride.utilities.mol;
  */
 public enum Atom implements Mass {
     //todo: check the monomass and avgmass values.
-    O_16("oxygen-16 atom", "O", 0, 15.99940, 15.99940),
-    C_12("carbon-12 atom", "C", 0, 12.01070, 12.01070);
+    O_16("oxygen-16 atom", "O", 0, 15.99491463, 15.99940),
+    C_12("carbon-12 atom", "C", 0, 12, 12.01070);
 
     private final String name;
     private final String formula;
