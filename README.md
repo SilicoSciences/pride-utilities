@@ -1,6 +1,8 @@
 pride-utilities
 ===============
 
+[![Build Status](https://travis-ci.org/PRIDE-Utilities/pride-utilities.svg?branch=master)](https://travis-ci.org/PRIDE-Utilities/pride-utilities)
+
 # About PRIDE Utilities
 
 The primary purpose of PRIDE Utilities library is to provide commonly used classes shared by all the PRIDE Tool Suite. You may also find it useful for your own computational proteomics projects.
