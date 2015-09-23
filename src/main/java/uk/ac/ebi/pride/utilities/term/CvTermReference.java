@@ -213,7 +213,7 @@ public enum CvTermReference{
 
     //MS-GF
 
-    MS_MSGF_RAWSCORE("MS", "MS:1002049", "MS-GF raw score", "MS:1001143"),
+    MS_MSGF_RAWSCORE("MS", "MS:1002049", "MS-GF raw score", "MS:    1001143"),
     MS_MSGF_DENOVOSCORE("MS", "MS:1002050", "MS-GF de novo score", "MS:1001143"),
     MS_MSGF_SPECEVALUE("MS", "MS:1002052", "MS-GF spectral E-value", "MS:1001143"),
     MS_MSGF_EVALUE("MS", "MS:1002053", "MS-GF E-value", "MS:1001143"),

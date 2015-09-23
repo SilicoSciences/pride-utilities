@@ -15,9 +15,12 @@ public class Tuple <K, V> implements Serializable {
     private K key;
     private V value;
 
+    private int hashCode;
+
     public Tuple(K key, V value) {
         this.key = key;
         this.value = value;
+        this.hashCode = computeHashCode();
     }
 
     public K getKey() {
@@ -26,6 +29,7 @@ public class Tuple <K, V> implements Serializable {
 
     public void setKey(K key) {
         this.key = key;
+        this.hashCode = computeHashCode();
     }
 
     public V getValue() {
@@ -34,6 +38,7 @@ public class Tuple <K, V> implements Serializable {
 
     public void setValue(V value) {
         this.value = value;
+        this.hashCode = computeHashCode();
     }
 
     @Override
@@ -49,6 +54,10 @@ public class Tuple <K, V> implements Serializable {
 
     @Override
     public int hashCode() {
+        return this.hashCode;
+    }
+
+    private int computeHashCode(){
         int result = key != null ? key.hashCode() : 0;
         result = 31 * result + (value != null ? value.hashCode() : 0);
         return result;

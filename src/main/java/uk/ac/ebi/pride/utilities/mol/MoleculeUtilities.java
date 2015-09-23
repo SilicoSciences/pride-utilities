@@ -297,6 +297,19 @@ public class MoleculeUtilities {
         return mass;
     }
 
+    public static int calcMissedCleavages(String sequence) {
+
+        //Always remove the last K or R from sequence
+        sequence = sequence.replaceAll("[K|R]$", "");
+
+        //We assume the hypothesis KR|P
+        sequence = sequence.replaceAll("[K|R]P", "");
+        int initialLength = sequence.length();
+
+        sequence = sequence.replaceAll("[K|R]", "");
+        return initialLength - sequence.length();
+    }
+
 
     public static void main(String[] args) {
         Double delta = calculateDeltaMz("IKQIVBLWTR", 424.4242933333333, 3, new ArrayList<Double>());
