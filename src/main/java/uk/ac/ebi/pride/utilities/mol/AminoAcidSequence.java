@@ -50,7 +50,7 @@ public class AminoAcidSequence implements Mass {
      * @return AminoAcid    return null when there is no index.
      */
     public AminoAcid getAminoAcid(int index) {
-        if (index >= 0 && aminoAcids.size() < index) {
+        if (index >= 0 && aminoAcids.size() > index) {
             return aminoAcids.get(index);
         } else {
             return null;
@@ -104,7 +104,7 @@ public class AminoAcidSequence implements Mass {
      * @param index index of the amino acid
      */
     public void remove(int index) {
-        if (index >= 0 && aminoAcids.size() < index) {
+        if (index >= 0 && aminoAcids.size() > index) {
             aminoAcids.remove(index);
         }
     }
