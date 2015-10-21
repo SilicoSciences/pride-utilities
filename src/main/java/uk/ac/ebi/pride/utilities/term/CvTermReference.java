@@ -16,6 +16,8 @@ public enum CvTermReference{
     MS_SOFTWARE("MS","MS:1000531", "Software", "MS:0000000"),
     MS_DATABASE("MS", "MS:1001013", "database name", "MS:1001011"),
     MS_PUBLICATION_DOI("MS", "MS:1001922", "doi", "MS:1000878"),
+    MS_IONIZATION_MODE("MS", "MS:1000465", "scan polarity", "MS:1000441"),
+    MS_GENERAL_SPECTRUM_REPRESENTATION("MS", "MS:1000525", "spectrum representation", "MS:1000442"),
 
 
     MS_SEARCH_PARAM_FIXED_MOD("MS", "MS:1002453", "No fixed modifications searched", "MS:1002094"),
