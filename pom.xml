@@ -204,8 +204,8 @@
 
     <!--scm git config-->
     <scm>
-        <connection>scm:git:github.com/PRIDE-Utilities/pride-utilities.git</connection>
-        <developerConnection>scm:git:git@github.com:PRIDE-Utilities/pride-utilities.git</developerConnection>
+        <connection>scm:git:https://github.com/PRIDE-Utilities/pride-utilities.git</connection>
+        <developerConnection>scm:git:https://github.com/PRIDE-Utilities/pride-utilities.git</developerConnection>
         <url>https://github.com/PRIDE-Utilities/pride-utilities.git</url>
         <tag>HEAD</tag>
     </scm>
