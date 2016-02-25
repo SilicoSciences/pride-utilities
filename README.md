@@ -13,7 +13,10 @@ pride-utilities is a PRIDE API licensed under [Apache License 2.0](http://www.ap
 
 # How to cite it:
 
-* Perez-Riverol Y, Uszkoreit J, Sanchez A, Ternent T, Del Toro N, Hermjakob H, Vizcaíno JA, Wang R. (2015). ms-data-core-api: An open-source, metadata-oriented library for computational proteomics. Bioinformatics. 2015 Apr 24. [PDF File](http://www.ncbi.nlm.nih.gov/pubmed/25910694) [Pubmed Record](http://www.ncbi.nlm.nih.gov/pubmed/25910694)
+Perez-Riverol, Yasset, Julian Uszkoreit, Aniel Sanchez, Tobias Ternent, Noemi del Toro, Henning Hermjakob, Juan Antonio Vizcaíno, and Rui Wang.
+"ms-data-core-api: an open-source, metadata-oriented library for computational proteomics."
+Bioinformatics 31, no. 17 (2015): 2903-2905. [ms-data-core-api](https://bioinformatics.oxfordjournals.org/content/31/17/2903.full)
+
 
 # Main Features
 * Data Structures to represent AminoAcids, Mass Table, etc.
@@ -39,14 +42,15 @@ Maven Dependency
 
 PRIDE Utilities library can be used in Maven projects, you can include the following snippets in your Maven pom file.
  
- ```maven
+```maven
  <dependency>
    <groupId>uk.ac.ebi.pride.utils</groupId>
    <artifactId>pride-utilities</artifactId>
    <version>0.1.23-SNAPSHOT</version>
  </dependency> 
- ```
- ```maven
+```
+ 
+```maven
  <!-- EBI repo -->
  <repository>
      <id>nexus-ebi-repo</id>
@@ -58,7 +62,9 @@ PRIDE Utilities library can be used in Maven projects, you can include the follo
     <id>nexus-ebi-repo-snapshots</id>
     <url>http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo-snapshots</url>
  </snapshotRepository>
+
 ```
+
 Note: you need to change the version number to the latest version.
 
 For developers, the latest source code is available from our SVN repository.
@@ -72,8 +78,12 @@ Please send us your feedback, including error reports, improvement suggestions, 
 # This library has been used in:
 
 * Wang, R., Fabregat, A., Ríos, D., Ovelleiro, D., Foster, J. M., Côté, R. G., ... & Vizcaíno, J. A. (2012). PRIDE Inspector: a tool to visualize and validate MS proteomics data. Nature biotechnology, 30(2), 135-137. [PDF File](http://www.nature.com/nbt/journal/v30/n2/pdf/nbt.2112.pdf), [Pubmed Record](http://www.ncbi.nlm.nih.gov/pubmed/22318026)
+
 * Côté, R. G., Griss, J., Dianes, J. A., Wang, R., Wright, J. C., van den Toorn, H. W., ... & Vizcaíno, J. A. (2012). The PRoteomics IDEntification (PRIDE) Converter 2 framework: an improved suite of tools to facilitate data submission to the PRIDE database and the ProteomeXchange consortium. Molecular & Cellular Proteomics, 11(12), 1682-1689. [PRIDE Converter 2](https://code.google.com/p/pride-converter-2/) 
+
 * Vizcaíno, J. A., Côté, R. G., Csordas, A., Dianes, J. A., Fabregat, A., Foster, J. M., ... & Hermjakob, H. (2013). The PRoteomics IDEntifications (PRIDE) database and associated tools: status in 2013. Nucleic acids research, 41(D1), D1063-D1069. [PRIDE-Archive](http://www.ebi.ac.uk/pride/archive/)
+
+* Perez-Riverol, Y., Xu, Q.W., Wang, R., Uszkoreit, J., Griss, J., Sanchez, A., Reisinger, F., Csordas, A., Ternent, T., del-Toro, N. and Dianes, J.A., 2016. PRIDE Inspector Toolsuite: Moving Toward a Universal Visualization Tool for Proteomics Data Standard Formats and Quality Assessment of ProteomeXchange Datasets. Molecular & Cellular Proteomics, 15(1), pp.305-317. [PRIDE Inspector Toolsuite](http://www.mcponline.org/content/15/1/305.full)
 
 How to use pride-utilities
 ===============
